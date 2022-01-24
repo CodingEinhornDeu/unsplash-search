@@ -1,10 +1,11 @@
 import './App.css';
-import axios from 'axios';
+import Search from './Search';
 
 function App() {
   return (
     <div className="App">
       <h1>Unsplash</h1>
+      <Search/>
     </div>
   );
 }
