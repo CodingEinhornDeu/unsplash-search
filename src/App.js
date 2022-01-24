@@ -4,7 +4,7 @@ import Search from './Search';
 function App() {
   return (
     <div className="App">
-      <h1>Unsplash</h1>
+      <h1 className="logo">Unsplash!</h1>
       <Search/>
     </div>
   );
