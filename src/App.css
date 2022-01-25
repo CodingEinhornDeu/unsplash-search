@@ -1,18 +1,18 @@
 *{
   box-sizing: border-box;
-  background: rgb(251, 250, 247);
   margin: 0;
   padding: 0;
+  background:rgb(243, 222, 194);
 }
 .App {
   text-align: left;
+  
 }
 
 .logo{
-  font-size: 30px;
-  color:rgb(255, 255, 255);
   padding: 10px 15px;
   background-image: linear-gradient(to right, #4ed6ff 24%, rgb(249, 214, 36)  51%, #FF4E50  100%); 
-  position: absolute;
   width: 100vw;
+  height: 10vh;
+  font-weight: bolder;
 }

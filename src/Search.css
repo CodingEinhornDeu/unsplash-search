@@ -1,4 +1,4 @@
-  .search-btn {
+  /* .search-btn {
   font-size: 18px;
   font-weight: bolder;
   color:rgb(255, 255, 255);
@@ -10,25 +10,15 @@
   margin: 6% ;
 } 
 .input-field,placeholder  {
-  margin: 6%;
   position: relative;
   height: 43px;
   width:80%;
   border-radius: 3px;
   font-size: 18px;
   padding: 18px;
-}
-.img-gallery {
- position: relative;
- left: 10px;
+  background-color: rgb(238, 224, 224);
+} */
 
-}
-img {
-width: 15rem;
-height: 10rem;
-margin: 20px;
-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.178);
 
-}
 
 

@@ -1,10 +1,11 @@
 import './App.css';
 import Search from './Search';
+import logos from './logo.svg';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="logo">Unsplash!</h1>
+        <img className="logo" src={logos}></img>
       <Search/>
     </div>
   );
