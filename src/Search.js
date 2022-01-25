@@ -28,10 +28,10 @@ const Search = () => {
           <button className='btn btn-info' onClick={searchHandler} type='submit'>Search</button>
         </div>
       </div>
-      <div className='container'>
+      <div className=''>
         {
           result.map((item) => {
-            return <img key={item.id} className='img-fluid img-thumbnail' alt='' style={{ height: 190, width: 190, margin: 10 }} src={item.urls.small} />
+            return <img key={item.id} className='img-fluid img-thumbnail' alt='' style={{ height: 200, width: 200, margin: 8 }} src={item.urls.small} />
           })
         }
       </div>
