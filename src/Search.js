@@ -12,7 +12,11 @@ const Search = () => {
   const changeHandler = (event) => {
     setPicture(event.target.value);
   }
-
+  const handleKeyPress = (event) => {
+    if(event.key === 'Enter'){
+      searchHandler();
+    }
+  }
   const searchHandler = () => {
     const url = "https://api.unsplash.com/search/photos?page=5&per_page=24&query=" + picture + "&client_id=" + clientId;
     axios.get(url)
@@ -23,7 +27,7 @@ const Search = () => {
   return (
     <div className='container'>
       <div className="input-group mt-5 mb-5 w-100">
-        <input className='form-control' onChange={changeHandler} type='text' name='picture' placeholder='🔎 Search for pictures...' />
+        <input className='form-control' onChange={changeHandler} onKeyPress={handleKeyPress} type='text' name='picture' placeholder='🔎 Search for pictures...' />
         <div className="input-group-append">
           <button className='btn btn-info' onClick={searchHandler} type='submit'>Search</button>
         </div>
