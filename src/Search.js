@@ -13,7 +13,7 @@ const Search = () => {
     setPicture(event.target.value);
   }
   const handleKeyPress = (event) => {
-    if(event.key === 'Enter'){
+    if (event.key === 'Enter') {
       searchHandler();
     }
   }
@@ -32,11 +32,11 @@ const Search = () => {
           <button className='btn btn-info' onClick={searchHandler} type='submit'>Search</button>
         </div>
       </div>
-      <div className=''>
+      <div>
         {
           result.map((item) => {
             return <img key={item.id} className='img-fluid img-thumbnail' alt='' style={{ height: 200, width: 200, margin: 7 }} src={item.urls.small} />
-          })
+        })
         }
       </div>
     </div>
