@@ -6,7 +6,7 @@ import axios from 'axios';
 const Search = () => {
 
   const [picture, setPicture] = useState('');
-  const [clientId, setClientId] = useState('Fp2GmkMH2Daq-lFe2geeUYQlpWYsx2WaaTydRLM_cLc')
+  const [clientId, setClientId] = useState(process.env.REACT_APP_API_KEY)
   const [result, setResult] = useState([]);
 
   const changeHandler = (event) => {
@@ -31,7 +31,7 @@ const Search = () => {
       <div className=''>
         {
           result.map((item) => {
-            return <img key={item.id} className='img-fluid img-thumbnail' alt='' style={{ height: 200, width: 200, margin: 8 }} src={item.urls.small} />
+            return <img key={item.id} className='img-fluid img-thumbnail' alt='' style={{ height: 200, width: 200, margin: 7 }} src={item.urls.small} />
           })
         }
       </div>
